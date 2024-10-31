@@ -1,10 +1,7 @@
 import Approach from "@/components/Approach";
 import Clients from "@/components/Clients";
 import Experience from "@/components/Experience";
-<<<<<<< Updated upstream
-=======
 import Footer from "@/components/Footer";
->>>>>>> Stashed changes
 import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
 import RecentProjects from "@/components/RecentProjects";
@@ -21,13 +18,9 @@ export default function Home() {
         <RecentProjects />
         <Clients />
         <Experience />
-<<<<<<< Updated upstream
-        {/* <Approach />
-        <Footer /> */}
-=======
         <Approach />
         <Footer />
->>>>>>> Stashed changes
+
       </div>
     </main>
   );
