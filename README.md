@@ -56,3 +56,6 @@ https://ui.aceternity.com/components/infinite-moving-cards
 
 6. Moving Border
 https://ui.aceternity.com/components/moving-border
+
+7. Canvas Reveal Effect
+https://ui.aceternity.com/components/canvas-reveal-effect
