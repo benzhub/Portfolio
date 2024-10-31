@@ -5,6 +5,13 @@ https://www.npmjs.com/package/next-themes
 npm i next-themes
 ```
 
+## react-lottie
+https://www.npmjs.com/package/react-lottie
+```shell
+npm i react-lottie
+npm i --save-dev @types/react-lottie
+```
+
 ## React Icons
 https://www.npmjs.com/package/react-icons
 ```shell
@@ -34,3 +41,12 @@ npm i framer-motion clsx tailwind-merge
 
 2. Text Generate Effect
 https://ui.aceternity.com/components/text-generate-effect
+
+3. Bento Grid
+https://ui.aceternity.com/components/bento-grid
+
+4. Github Globe
+https://ui.aceternity.com/components/github-globe
+```shell
+npm i three three-globe @react-three/fiber @react-three/drei
+```
