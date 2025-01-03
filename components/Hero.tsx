@@ -1,8 +1,8 @@
 import { FaLocationArrow } from "react-icons/fa6";
 
-import MagicButton from "./MagicButton";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
+import ShadowButton from "./buttons/shadow";
 
 const Hero = () => {
   return (
@@ -61,11 +61,12 @@ const Hero = () => {
           </p>
 
           <a href="#about">
-            <MagicButton
-              title="Show my work"
-              icon={<FaLocationArrow />}
-              position="right"
-            />
+            <ShadowButton>
+              <div className="flex items-center gap-2">
+                <span className="block">Show my work</span>
+                <FaLocationArrow />
+              </div>
+            </ShadowButton>
           </a>
         </div>
       </div>
