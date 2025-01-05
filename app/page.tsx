@@ -3,9 +3,12 @@ import Footer from "@/components/Footer";
 import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
 import RecentProjects from "@/components/RecentProjects";
-import { FloatingNav } from "@/components/ui/FloatingNavbar";
+import dynamic from "next/dynamic";
 import { navItems } from "@/data";
 import {Suspense} from "react";
+const FloatingNav = dynamic(() => import("@/components/ui/FloatingNavbar"), {
+  ssr: false,
+});
 
 export default function Home() {
   return (

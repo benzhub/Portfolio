@@ -6,8 +6,8 @@ const useHandleScroll = () => {
     targetId: string
   ) => {
     e.preventDefault();
-    if (typeof window !== "undefined") {
-      const target = window.document.getElementById(targetId);
+    if (typeof document !== "undefined") {
+      const target = document.getElementById(targetId);
       if (!target) return;
 
       const navHeight = 100;
