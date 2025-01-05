@@ -2,7 +2,7 @@
 
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   motion,
   AnimatePresence,
@@ -26,10 +26,16 @@ export const FloatingNav = ({
 }) => {
   const { handleScroll } = useHandleScroll();
   const { scrollYProgress } = useScroll();
-
   const [visible, setVisible] = useState(true);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   useMotionValueEvent(scrollYProgress, "change", (current) => {
+    if (!mounted) return;
+    
     if (typeof current === "number") {
       const direction = current! - scrollYProgress.getPrevious()!;
 
@@ -44,6 +50,10 @@ export const FloatingNav = ({
       }
     }
   });
+
+  if (!mounted) {
+    return null;
+  }
 
   return (
     <AnimatePresence mode="wait">
@@ -83,7 +93,6 @@ export const FloatingNav = ({
             <span className="text-sm cursor-pointer">{navItem.name}</span>
           </Link>
         ))}
-
       </motion.div>
     </AnimatePresence>
   );
