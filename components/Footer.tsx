@@ -25,7 +25,7 @@ const Footer = () => {
           Let&apos;s start a conversation about how I can support your project goals.
         </p>
         <Link href="mailto:lenrich1403@gmail.com">
-          <GradientButton title="Reach out and let's chat!" />
+          <GradientButton title="Chat now!" />
         </Link>
       </div>
       <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
@@ -33,7 +33,7 @@ const Footer = () => {
           Copyright © 2024 Benz
         </p>
 
-        <div className="flex items-center md:gap-3 gap-6">
+        <div className="flex items-center md:gap-3 gap-6 py-4">
           {socialMedia.map((info) => (
             <div
               key={info.id}
