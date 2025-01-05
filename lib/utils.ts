@@ -7,6 +7,7 @@ export function cn(...inputs: ClassValue[]) {
 
 export const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
   e.preventDefault();
+  if (typeof window === 'undefined') return;
   const target = document.getElementById(targetId);
   if (!target) return;
 
