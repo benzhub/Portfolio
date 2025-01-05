@@ -10,7 +10,8 @@ import {
   useMotionValueEvent,
 } from "framer-motion";
 import Link from "next/link";
-import { cn, handleScroll } from "@/lib/utils";
+import { cn } from "@/lib/utils";
+import useHandleScroll from "@/hooks/useHandleScroll";
 
 export const FloatingNav = ({
   navItems,
@@ -23,6 +24,7 @@ export const FloatingNav = ({
   }[];
   className?: string;
 }) => {
+  const { handleScroll } = useHandleScroll();
   const { scrollYProgress } = useScroll();
 
   const [visible, setVisible] = useState(true);

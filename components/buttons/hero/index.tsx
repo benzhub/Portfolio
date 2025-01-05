@@ -1,10 +1,11 @@
 "use client";
-import { handleScroll } from "@/lib/utils";
 import Link from "next/link";
 import { FaLocationArrow } from "react-icons/fa6";
 import ShadowButton from "../shadow";
+import useHandleScroll from "@/hooks/useHandleScroll";
 
 function HeroButton() {
+  const { handleScroll } = useHandleScroll();
   return (
     <Link
       href="#about"
