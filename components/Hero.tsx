@@ -1,6 +1,9 @@
 "use client";
 
-import HeroButton from "./buttons/hero";
+import dynamic from "next/dynamic";
+const HeroButton = dynamic(() => import("./buttons/hero"), {
+  ssr: false,
+});
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 
