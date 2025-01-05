@@ -1,9 +1,8 @@
-import { FaLocationArrow } from "react-icons/fa6";
+"use client";
 
+import HeroButton from "./buttons/hero";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
-import ShadowButton from "./buttons/shadow";
-import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -42,14 +41,7 @@ const Hero = () => {
             I&apos;m Ben, a Frontend Developer based in Taiwan.
           </p>
 
-          <Link href="#about" className="pt-10">
-            <ShadowButton>
-              <div className="flex items-center gap-2">
-                <span className="block">View My Showcase</span>
-                <FaLocationArrow />
-              </div>
-            </ShadowButton>
-          </Link>
+          <HeroButton />
         </div>
       </div>
     </div>
