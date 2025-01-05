@@ -1,29 +1,24 @@
 "use client";
 
-import { useEffect, useState } from "react";
-
 const useHandleScroll = () => {
-  const [isClient, setIsClient] = useState(false);
-
-  useEffect(() => {
-    setIsClient(true);
-  }, []);
-
-  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
-    if (!isClient) return;
-    
+  const handleScroll = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    targetId: string
+  ) => {
     e.preventDefault();
-    const target = document.getElementById(targetId);
-    if (!target) return;
+    if (typeof window !== "undefined") {
+      const target = window.document.getElementById(targetId);
+      if (!target) return;
 
-    const navHeight = 100;
-    const elementPosition = target.getBoundingClientRect().top;
-    const offsetPosition = elementPosition + window.scrollY - navHeight;
+      const navHeight = 100;
+      const elementPosition = target.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.scrollY - navHeight;
 
-    window.scrollTo({
-      top: offsetPosition,
-      behavior: "smooth"
-    });
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
   };
 
   return { handleScroll };
