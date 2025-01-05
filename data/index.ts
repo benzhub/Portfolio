@@ -1,7 +1,6 @@
 export const navItems = [
     { name: "About", link: "#about" },
     { name: "Projects", link: "#projects" },
-    { name: "Testimonials", link: "#testimonials" },
     { name: "Contact", link: "#contact" },
   ];
   
@@ -72,35 +71,35 @@ export const navItems = [
   export const projects = [
     {
       id: 1,
-      title: "3D Solar System Planets to Explore",
-      des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-      img: "/p1.svg",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-      link: "https://github.com/adrianhajdin?tab=repositories",
+      title: "Tab Manager",
+      description: "A chrome extension that allows you to manage your tabs",
+      coverImg: "/p1.svg",
+      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/fm.svg"],
+      link: "https://chromewebstore.google.com/detail/tab-manager/lhbgbnoaekmmjmemkddplmkplindifkm?authuser=0&hl=zh-CN",
     },
     {
       id: 2,
-      title: "Yoom - Video Conferencing App",
-      des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-      img: "/p2.svg",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-      link: "https://github.com/adrianhajdin/zoom-clone",
+      title: "Pizza Ordering",
+      description: "A pizza ordering app",
+      coverImg: "/p2.svg",
+      iconLists: ["/next.svg", "/tail.svg", "/ts.svg"],
+      link: "https://pizza-ordering-ten.vercel.app/",
     },
     {
       id: 3,
-      title: "AI Image SaaS - Canva Application",
-      des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-      img: "/p3.svg",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-      link: "https://github.com/adrianhajdin/ai_saas_app",
+      title: "Issue Tracker",
+      description: "A issue tracker app",
+      coverImg: "/p3.svg",
+      iconLists: ["/next.svg", "/tail.svg", "/ts.svg"],
+      link: "https://issue-tracker-flax-six.vercel.app/",
     },
     {
       id: 4,
-      title: "Animated Apple Iphone 3D Website",
-      des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-      img: "/p4.svg",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-      link: "https://github.com/adrianhajdin/iphone",
+      title: "Finance Management",
+      description: "A finance management app",
+      coverImg: "/p4.svg",
+      iconLists: ["/next.svg", "/tail.svg", "/ts.svg"],
+      link: "",
     },
   ];
   
