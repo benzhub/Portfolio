@@ -147,6 +147,37 @@ const config = {
             transform: "translate(calc(-50% - 0.5rem))",
           },
         },
+        rotate: {
+          to: {
+            transform: "rotate(360deg)",
+          },
+        },
+        gradient: {
+          '0%, 100%': { backgroundPosition: '0% 50%' },
+          '50%': { backgroundPosition: '100% 50%' },
+        },
+        'star-move': {
+          from: { transform: 'translateY(0)' },
+          to: { transform: 'translateY(-135rem)' },
+        },
+        'star-rotate': {
+          from: { transform: 'rotate(360deg)' },
+          to: { transform: 'rotate(0)' },
+        },
+        'pulse-glow': {
+          '0%': {
+            transform: 'scale(0.75)',
+            boxShadow: '0 0 0 0 rgba(0, 0, 0, 0.7)',
+          },
+          '70%': {
+            transform: 'scale(1)',
+            boxShadow: '0 0 0 10px rgba(0, 0, 0, 0)',
+          },
+          '100%': {
+            transform: 'scale(0.75)',
+            boxShadow: '0 0 0 0 rgba(0, 0, 0, 0)',
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -161,6 +192,11 @@ const config = {
         scroll:
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
         "scroll-vertical": "scroll-vertical 20s linear infinite",
+        gradient: 'gradient 5s ease infinite',
+        'pulse-glow': 'pulse-glow 4s infinite',
+      },
+      textShadow: {
+        'white': '0 0 4px white',
       },
     },
   },
