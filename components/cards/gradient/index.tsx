@@ -39,13 +39,14 @@ const GradientCard = ({
       </div>
 
       {/* Content */}
-      <div className="space-y-1">
+      <div className="space-y-1 flex justify-center items-center">
         <Image
           src={coverImg}
           alt="project"
-          width={300}
+          width={500}
           height={100}
-          className="w-full h-full"
+          style={{ maxHeight: "200px", width: "auto" }}
+          className="rounded-lg"
         />
       </div>
 
@@ -56,7 +57,14 @@ const GradientCard = ({
         <p className="text-xs text-[#d4d4d4] min-h-[3rem]">{description}</p>
         <div className="flex flex-wrap gap-2">
           {iconLists.map((icon, idx) => (
-            <Image key={idx} src={icon} alt="icon" width={25} height={25} />
+            <Image
+              key={idx}
+              src={icon}
+              alt="icon"
+              width={25}
+              height={25}
+              className="rounded-md"
+            />
           ))}
         </div>
       </div>
@@ -67,7 +75,7 @@ const GradientCard = ({
         bg-gradient-to-b from-[#5e3aee] to-[#c56bf0]
         shadow-[inset_0_-2px_25px_-4px_#ffffff]"
         >
-          Know More
+          Explore
         </button>
       </Link>
     </div>
