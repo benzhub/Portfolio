@@ -3,6 +3,7 @@ import { FaLocationArrow } from "react-icons/fa6";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import ShadowButton from "./buttons/shadow";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -20,14 +21,10 @@ const Hero = () => {
       </div>
 
       <div
-        className="h-screen w-full dark:bg-black-100 bg-white dark:bg-grid-white/[0.015] bg-grid-black-100/[0.2]
+        className="h-screen w-full
        absolute top-0 left-0 flex items-center justify-center"
       >
-        <div
-
-          className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100
-         bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"
-        />
+        <div className="absolute pointer-events-none inset-0 flex items-center justify-center " />
       </div>
 
       <div className="flex justify-center relative my-20 z-10">
@@ -41,18 +38,18 @@ const Hero = () => {
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
 
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
+          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl text-white">
             I&apos;m Ben, a Frontend Developer based in Taiwan.
           </p>
 
-          <a href="#about">
+          <Link href="#about" className="pt-10">
             <ShadowButton>
               <div className="flex items-center gap-2">
                 <span className="block">View My Showcase</span>
                 <FaLocationArrow />
               </div>
             </ShadowButton>
-          </a>
+          </Link>
         </div>
       </div>
     </div>
