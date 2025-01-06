@@ -8,14 +8,14 @@ const Programming = () => {
       <h3 className="text-3xl font-bold text-white/75 text-center hover:translate-x-2 transition duration-200">
         Lover of programming and creation .
       </h3>
-      {/* top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 */}
+      
       <div className="h-3/5 overflow-hidden relative">
         <div
-          className="absolute -right-6 bottom-8"
+          className="absolute -right-[5rem] -bottom-[3rem] lg:-right-[4rem] lg:-bottom-[2rem]"
           style={{
             position: "relative",
             height: "350px",
-            width: "400px",
+            width: "300px",
           }}
         >
           <Image
