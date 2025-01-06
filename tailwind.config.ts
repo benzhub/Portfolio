@@ -79,9 +79,13 @@ const config = {
         sm: "calc(var(--radius) - 4px)",
       },
       keyframes: {
-        "scroll-vertical": {
+        "scroll-vertical-up": {
           "0%": { transform: "translateY(0)" },
-          "100%": { transform: "translateY(-50%)" },
+          "100%": { transform: "translateY(-50%)" }
+        },
+        "scroll-vertical-down": {
+          "0%": { transform: "translateY(-50%)" },
+          "100%": { transform: "translateY(0)" }
         },
         "accordion-down": {
           from: { height: "0" },
@@ -200,7 +204,8 @@ const config = {
         fifth: "moveInCircle 20s ease infinite",
         scroll:
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
-        "scroll-vertical": "scroll-vertical 20s linear infinite",
+        "scroll-vertical-up": "scroll-vertical-up var(--animation-duration, 40s) linear infinite",
+        "scroll-vertical-down": "scroll-vertical-down var(--animation-duration, 40s) linear infinite",
         gradient: 'gradient 5s ease infinite',
         'pulse-glow': 'pulse-glow 4s infinite',
       },
