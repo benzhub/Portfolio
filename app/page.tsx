@@ -6,6 +6,7 @@ import RecentProjects from "@/components/RecentProjects";
 import dynamic from "next/dynamic";
 import { navItems } from "@/data";
 import {Suspense} from "react";
+import About from "@/components/about";
 const FloatingNav = dynamic(() => import("@/components/ui/FloatingNavbar"), {
   ssr: false,
 });
@@ -21,6 +22,7 @@ export default function Home() {
           <Hero />
         </AuroraBackgroundDemo>
         <div className="max-w-7xl w-full">
+          <About />
           <Grid />
           <RecentProjects />
           <Footer />
