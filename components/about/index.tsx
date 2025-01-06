@@ -4,6 +4,7 @@ import { ReactNode, useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
 import { Boxes } from "../background/boxes";
 import MagicButton from "../MagicButton";
+import InfiniteMovingTechStack from "./tech-stack";
 
 type GridType = {
   children: ReactNode;
@@ -66,60 +67,17 @@ function GridItem({
 }
 
 function TechStack() {
-  const leftLists = [
-    "ReactJS",
-    "NextJS",
-    "Typescript",
-    "TailwindCSS",
-    "Bootstrap",
-    "Shadcn UI",
-    "Acternity UI",
-    "React Native",
-  ];
-  const rightLists = [
-    "Python",
-    "MySQL",
-    "PostgreSQL",
-    "Prisma",
-    "Docker",
-    "Linux",
-    "AWS",
-    "Supabase",
-  ];
   return (
-    <div className="grid grid-cols-2 items-center justify-center gap-6 h-full">
+    <div className="grid grid-cols-1 lg:grid-cols-2 items-center justify-center gap-2 h-full w-full">
       <div className="p-4 text-center">
         <div className="text-lg text-[#C1C2D3]">
           I constantly try to improve
         </div>
         <div className="text-2xl font-bold">My tech stack</div>
       </div>
-      <div className="p-4 flex items-center justify-center">
-        <div className="relative h-[300px] overflow-hidden">
-          <div className="animate-scroll-vertical flex gap-4">
-            <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
-              {[...leftLists, ...leftLists].map((item, i) => (
-                <span
-                  key={i}
-                  className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
-                        lg:opacity-100 rounded-lg text-center bg-[#10132E]"
-                >
-                  {item}
-                </span>
-              ))}
-            </div>
-            <div className="flex flex-col gap-3 md:gap-3 lg:gap-8 translate-y-10">
-              {[...rightLists, ...rightLists].map((item, i) => (
-                <span
-                  key={`clone-${i}`}
-                  className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
-                        lg:opacity-100 rounded-lg text-center bg-[#10132E]"
-                >
-                  {item}
-                </span>
-              ))}
-            </div>
-          </div>
+      <div className="p-4 flex items-center justify-center w-full">
+        <div className="h-full overflow-hidden w-full">
+          <InfiniteMovingTechStack />
         </div>
       </div>
     </div>
@@ -160,7 +118,9 @@ const About = () => {
           <GridItem className="md:col-span-6">
             <TechStack />
           </GridItem>
-          <GridItem className="md:col-span-3">2</GridItem>
+          <GridItem className="md:col-span-3">
+            2
+          </GridItem>
           <GridItem className="md:col-span-3">3</GridItem>
         </Grid>
         <Grid cols={1} gap={6} className="md:grid-cols-3">
