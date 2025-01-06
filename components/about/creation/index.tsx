@@ -19,19 +19,19 @@ const Creation = () => {
         </h3>
       </div>
       <div className="flex items-end justify-start relative overflow-hidden h-3/4">
-        <div className="absolute -bottom-[2.5rem] left-[3rem]">
+        <div className="absolute -bottom-[2.5rem] left-[2rem]">
           <LiaMagicSolid size={180} className="text-white/30" />
         </div>
         <div className="absolute top-[2.8rem] right-[2.5rem]">
           <IoGameControllerOutline size={30} className="text-white/30" />
         </div>
-        <div className="absolute top-[6.8rem] right-[2.5rem]">
+        <div className="absolute top-[7.3rem] right-[2.5rem]">
           <GiGearHammer size={30} className="text-white/30" />
         </div>
         <div className="absolute top-12 right-[5.5rem]">
           <FiTool size={30} className="text-white/30" />
         </div>
-        <div className="absolute top-[4.8rem] right-[4rem]">
+        <div className="absolute top-[5.2rem] right-[4rem]">
           <AiFillOpenAI size={30} className="text-white/30" />
         </div>
         <div className="absolute top-[5.5rem] right-[7rem]">
@@ -40,10 +40,10 @@ const Creation = () => {
         <div className="absolute top-[7.5rem] right-[5.5rem]">
           <BsPencil size={30} className="text-white/30" />
         </div>
-        <div className="absolute top-[4.8rem] right-[1rem]">
+        <div className="absolute top-[5.2rem] right-[1rem]">
           <TbBrandGoogleBigQuery size={30} className="text-white/30" />
         </div>
-        <div className="absolute top-[9.5rem] right-[4rem]">
+        <div className="absolute top-[9.2rem] right-[4rem]">
           <MdOutlinePhoneIphone size={30} className="text-white/30" />
         </div>
       </div>
