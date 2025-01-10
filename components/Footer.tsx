@@ -19,10 +19,12 @@ const Footer = () => {
 
       <div className="flex flex-col items-center">
         <h1 className="heading lg:max-w-[45vw]">
-          Are you prepared to make your mark in the <span className="text-purple">digital world</span>?
+          Are you prepared to make your mark in the{" "}
+          <span className="text-purple">digital world</span>?
         </h1>
         <p className="text-white-200 md:mt-10 my-5 text-center">
-          Let&apos;s start a conversation about how I can support your project goals.
+          Let&apos;s start a conversation about how I can support your project
+          goals.
         </p>
         <Link href="mailto:lenrich1403@gmail.com">
           <GradientButton title="Chat now!" />
@@ -39,12 +41,9 @@ const Footer = () => {
               key={info.id}
               className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
             >
-              <Image 
-                src={info.img} 
-                alt="icons" 
-                width={20} 
-                height={20} 
-              />
+              <Link href={info.link} target="_blank">
+                <Image src={info.img} alt="icons" width={20} height={20} />
+              </Link>
             </div>
           ))}
         </div>
